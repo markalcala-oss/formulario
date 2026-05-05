@@ -6,7 +6,7 @@ app = Flask(__name__)
 # CONFIGURACIÓN PARA LA NUBE
 app.config['MYSQL_HOST'] = '172.31.40.23' # IP Privada de tu instancia de BD
 app.config['MYSQL_USER'] = 'markk'
-app.config['MYSQL_PASSWORD'] = 'TuPasswordReal' 
+app.config['MYSQL_PASSWORD'] = 'PasswordSeguro123' 
 app.config['MYSQL_DB'] = 'formulario_db'
 
 mysql = MySQL(app)
