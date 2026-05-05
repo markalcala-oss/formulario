@@ -10,7 +10,6 @@
     --color-green-600: oklch(62.7% 0.194 149.214);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
-    --color-gray-900: oklch(21% 0.034 264.665);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
@@ -215,9 +214,6 @@
   .bg-blue-500 {
     background-color: var(--color-blue-500);
   }
-  .bg-gray-900 {
-    background-color: var(--color-gray-900);
-  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -269,22 +265,6 @@
       }
     }
   }
-}
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-.animated-bg {
-  background: linear-gradient(-45deg, #1e3a8a, #9333ea, #ec4899, #3b82f6);
-  background-size: 400% 400%;
-  animation: gradientBG 10s ease infinite;
 }
 @property --tw-rotate-x {
   syntax: "*";
