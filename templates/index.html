@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario 3D</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="animated-bg flex items-center justify-center h-screen">
+
+<div id="card" class="bg-white p-8 rounded-2xl shadow-2xl transform transition-transform duration-200 w-80">
+    
+    <h2 class="text-2xl font-bold mb-4 text-center">Formulario</h2>
+
+    <form method="POST">
+        <input 
+            type="text" 
+            name="nombre" 
+            placeholder="Tu nombre"
+            class="w-full mb-4 p-2 border rounded"
+            required
+        >
+        <button class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
+            Enviar
+        </button>
+    </form>
+
+    {% if mensaje %}
+        <p class="mt-4 text-green-600 text-center">{{ mensaje }}</p>
+    {% endif %}
+
+</div>
+
+<script src="{{ url_for('static', filename='js/effect.js') }}"></script>
+
+</body>
+</html>
